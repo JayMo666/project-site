@@ -7,6 +7,7 @@ function  HeaderInit(){
     $("body").addClass("fiexed-header-on");
   }else{
     $("body").removeClass("fiexed-header-on");
+
   }
 }
 HeaderInit();

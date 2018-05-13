@@ -317,8 +317,23 @@ img{
 /* 头部样式开始 =================================================================*/
 header{
   color: #fff;
-  background-color: rgba(0,0,0,0.5);
+
   padding: 10px 0;
+  position: relative;
+}
+header::after{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  content: '';
+
+}
+header .container{
+  position: relative;
+  z-index: 1;
 }
 .logo{
   float: left;
@@ -338,18 +353,19 @@ header .col-md-8{
   margin-top: 15px;
 }
 .navbar-default{
-  background-color: transparent;
-  border: none;
+   background-color: transparent;
+    border: none;
+  }
 
-}
+
 .navbar-default .navbar-nav>li>a{
   color: #74b49b;
   font-size: 18px;
 }
 .navbar-default .navbar-nav>li.active>a:hover
 .navbar-default .navbar-nav>li>a:hover{
-  color: #55acee;
 
+  color: #55acee;
 }
 .navbar-default .navbar-nav>li.active>a{
   background-color: transparent;
